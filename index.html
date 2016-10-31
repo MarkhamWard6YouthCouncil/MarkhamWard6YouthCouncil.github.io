@@ -22,10 +22,6 @@
     <script>
     $(document).ready(function(){
         var mobile;
-
-
-
-
         //fade in title
         $(".title").fadeIn(1500,function(){
         });
@@ -76,12 +72,6 @@
 };
 $(document).ready(jqUpdateSize);    // When the page first loads
 $(window).resize(jqUpdateSize);     // When the browser changes size
-
-
-
-
-
-
         $("#execbtn").hover(
               function() {
                   if(mobile == false){
@@ -104,7 +94,6 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
                 });
               }
         );
-
         $("#pasteventsbtn").hover(
               function() {
                   if(mobile == false){
@@ -126,7 +115,6 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
                 });
               }
         );
-
         $("#contactusbtn").hover(
               function() {
                   if(mobile == false){
@@ -140,7 +128,6 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
                         window.clearTimeout(hrtwowidthtimer);
                     }
                 });
-
                   }
               }, function() {
                 $( this ).find( "hr:last" ).fadeOut(200,function(){
@@ -148,8 +135,6 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
                 });
               }
         );
-
-
         //menu button item links
         $("#pasteventsbtn").on("click",function(){
             location.href="past_events/past-events.html";
@@ -157,14 +142,6 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
         $("#execbtn").on("click",function(){
             location.href="our_executive_team/our-executive-team.html";
         });
-
-
-
-
-
-
-
-
         //about sub topic buttns
 
         $("#mstitle").on("click",function(){
@@ -209,10 +186,6 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
                   $(this).children(".down").css("border-top-color","#0091C2");
               }
             );
-
-
-
-
     });
 
     </script>
@@ -276,9 +249,5 @@ Our organization consists of youth living or attending a high school in the Mark
             </div>
         </div>
         <script src="footer.js"></script>
-    </div>
     </body>
-
-
-
 </html>

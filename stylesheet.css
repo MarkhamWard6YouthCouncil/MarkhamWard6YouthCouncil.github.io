@@ -23,14 +23,6 @@ body{
     display: none;
 
 }
-
-
-
-
-
-
-
-
 .homepagemenubuttons{
     text-align: center;
     color: black;
@@ -73,9 +65,6 @@ body{
 .aboutsub{
     text-align: center;
 }
-
-
-
 .down{
     position: relative;
     top: 17px;
@@ -97,7 +86,6 @@ body{
 	border-bottom: 10px solid #0091C2;
     display: none;
 }
-
 .abouth{
     cursor: pointer;
     display: none;
@@ -111,8 +99,6 @@ body{
 #gp{
     display: none;
 }
-
-
 #footerrow{
     position: relative;
     top: 50px;
@@ -187,13 +173,12 @@ body{
     top: -10px;
 }
 
-
-
-
-
-
-
-
+/*exec team*/
+.profileName{
+  position: relative;
+  top: -55px;
+  font-size: 18px;
+}
 
 /*pastevents page*/
 #timeevents{
@@ -204,19 +189,9 @@ body{
     width: 1px;
     background-color: black;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
+#eventDescP{
+  /*text-align: center;*/
+}
 
 /*navbar*/
 .navbar {
