@@ -1,5 +1,5 @@
 *{
- font-family: Verdana;   
+ font-family: Verdana;
 }
 body{
     background-color: #EDEDED;
@@ -21,7 +21,7 @@ body{
     font-size: 50px;
     top: -50px;
     display: none;
-    
+
 }
 
 
@@ -56,7 +56,7 @@ body{
 }
 #titlenum{
     font-size: 43px;
-       
+
 }
 #aboutustitle{
     font-family: Century Gothic, sans-serif;
@@ -106,10 +106,10 @@ body{
  display: none;
 }
 #tbp{
-    display: none;   
+    display: none;
 }
 #gp{
-    display: none;   
+    display: none;
 }
 
 
@@ -124,7 +124,8 @@ body{
     border-bottom: 1px solid white;
     background-color: black;
     color: white;
-    width:250px;
+    width:100%;
+    margin-top: 50px;
 }
 
 ::-webkit-input-placeholder { /* Safari, Chrome and Opera */
@@ -139,7 +140,17 @@ body{
   color: #EBEBEB;
 }
 
-
+.img-container {
+    position:relative;
+    padding-top: 280px;
+}
+.eventPhoto{
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width:100%;
+}
 
 /*footer*/
 #joinuslink{
@@ -150,7 +161,7 @@ body{
     border: 1px solid white;
     padding: 2px;
     position: relative;
-    top: 10px;
+    top: -10px;
 }
 #joinuslink:hover{
     color: dodgerblue;
@@ -168,12 +179,12 @@ body{
 }
 #twitter-icon{
     position: relative;
-    top: 10px;
+    top: -10px;
 }
 #facebook-icon{
     position: relative;
     left: -14px;
-    top: 10px;
+    top: -10px;
 }
 
 

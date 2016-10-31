@@ -7,29 +7,29 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="keywords" content="Markham Youth" >
         <meta name="description" content="A place for youths to chill">
-        
+
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-        
+
         <!--font css-->
         <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans" />
-        
+
         <!--bootstrap-->
         <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-        
+
         <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
     </head>
     <script>
     $(document).ready(function(){
         var mobile;
-        
-        
-        
-        
+
+
+
+
         //fade in title
         $(".title").fadeIn(1500,function(){
         });
-        
+
         $("#titlenum").delay(300).fadeOut(200,function(){
                 $("#titlenum").html("2");
                 $("#titlenum").show();
@@ -54,14 +54,14 @@
         $("#execbtn").fadeIn(600);
         $("#pasteventsbtn").fadeIn(700);
         $("#contactusbtn").fadeIn(800);
-        
+
         //about us fade in
         $("#aboutustitle").fadeIn(1000);
         $("#aboutusp").fadeIn(1500);
         $("#aboutusp").animate({top: "-40"},{duration: 1500, queue: false});
         $(".abouth").fadeIn(600);
-        
-        
+
+
         function jqUpdateSize(){
     // Get the dimensions of the viewport
     var width = $(window).width();
@@ -72,17 +72,17 @@
             }else{
                 mobile = false;
             }
-            
+
 };
 $(document).ready(jqUpdateSize);    // When the page first loads
 $(window).resize(jqUpdateSize);     // When the browser changes size
-        
-        
-        
-        
-        
-        
-        $("#execbtn").hover(        
+
+
+
+
+
+
+        $("#execbtn").hover(
               function() {
                   if(mobile == false){
                 $( this ).html("Our Executive Team<hr class='menubtnline'>");
@@ -104,7 +104,7 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
                 });
               }
         );
-        
+
         $("#pasteventsbtn").hover(
               function() {
                   if(mobile == false){
@@ -126,7 +126,7 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
                 });
               }
         );
-        
+
         $("#contactusbtn").hover(
               function() {
                   if(mobile == false){
@@ -148,25 +148,25 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
                 });
               }
         );
-        
-        
+
+
         //menu button item links
         $("#pasteventsbtn").on("click",function(){
-            location.href="past_events/past-events.php";
+            location.href="past_events/past-events.html";
         })
         $("#execbtn").on("click",function(){
-            location.href="our_executive_team/our-executive-team.php";
+            location.href="our_executive_team/our-executive-team.html";
         });
-        
-        
-        
-        
-        
-        
-        
-        
+
+
+
+
+
+
+
+
         //about sub topic buttns
-        
+
         $("#mstitle").on("click",function(){
             $("#msp").fadeToggle();
             if($("#mstitle").children(".down").is(":visible")){
@@ -174,7 +174,7 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
                 $("#mstitle").children(".up").show();
             }else{
                 $("#mstitle").children(".up").hide();
-                $("#mstitle").children(".down").show(); 
+                $("#mstitle").children(".down").show();
             }
         });
         $("#tbtitle").on("click",function(){
@@ -184,7 +184,7 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
                 $("#tbtitle").children(".up").show();
             }else{
                 $("#tbtitle").children(".up").hide();
-                $("#tbtitle").children(".down").show(); 
+                $("#tbtitle").children(".down").show();
             }
         });
         $("#gtitle").on("click",function(){
@@ -194,7 +194,7 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
                 $("#gtitle").children(".up").show();
             }else{
                 $("#gtitle").children(".up").hide();
-                $("#gtitle").children(".down").show(); 
+                $("#gtitle").children(".down").show();
             }
         });
         //about highlight when hover
@@ -209,16 +209,16 @@ $(window).resize(jqUpdateSize);     // When the browser changes size
                   $(this).children(".down").css("border-top-color","#0091C2");
               }
             );
-        
-        
-        
-        
+
+
+
+
     });
-    
+
     </script>
     <body>
-            
-    <div class="container-narrow"> 
+
+    <div class="container-narrow">
         <div class="row-fluid">
             <div class="col-sm-12">
                     <h1 class="title">Markham Ward <span id="titlenum">1</span> Youth Council</h1>
@@ -275,8 +275,8 @@ Our organization consists of youth living or attending a high school in the Mark
                 </div>
             </div>
         </div>
+        <script src="footer.js"></script>
     </div>
-        <?php include 'footer.php';?>
     </body>
 
 
