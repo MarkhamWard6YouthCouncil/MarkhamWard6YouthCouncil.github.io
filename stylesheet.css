@@ -192,6 +192,10 @@ body{
 #eventDescP{
   /*text-align: center;*/
 }
+.profileDesc{
+  position: relative;
+  top: -50px;
+}
 
 /*navbar*/
 .navbar {
