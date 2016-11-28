@@ -9,7 +9,13 @@ body{
     padding: 30px;
     max-width: 1000px;
 }
-
+a{
+  text-decoration: none;
+  cursor: pointer;
+}
+a:hover {
+    text-decoration: none;
+}
 .col-sm-12{
 		color: black;
 		margin-top: 15px;
@@ -19,15 +25,26 @@ body{
 .title{
     font-family: Driod Sans;
     font-size: 50px;
-    top: -50px;
+    width: 100%;
+    text-align: center;
     display: none;
-
+    position: absolute;
+    z-index: 1;
+    color: white;
+    height: 0px;
+}
+#menuItems{
+  position: absolute;
+  top: 370px;
+  width: 100%;
+  z-index: 1;
 }
 .homepagemenubuttons{
     text-align: center;
     color: black;
     cursor: pointer;
     padding-top: 20px;
+    color: white;
 }
 #execbtn{
     display: none;
@@ -50,20 +67,28 @@ body{
     font-size: 43px;
 
 }
-#aboutustitle{
-    font-family: Century Gothic, sans-serif;
-    display: none;
-}
-#aboutusp{
+#infoboxes{
     position: relative;
-    display: none;
+    text-align: center;
 }
 .footerdiv{
     background-color: black;
     height: 200px;
 }
-.aboutsub{
+#aboutSec{
     text-align: center;
+    height: 200px;
+    background-color: #2c3e50;
+    position: relative;
+    color: white;
+}
+.missionStatements{
+  position: relative;
+  color: white;
+  height: 200px;
+  padding-top: 30px;
+  text-align: center;
+  margin: 0px;
 }
 .down{
     position: relative;
@@ -90,15 +115,6 @@ body{
     cursor: pointer;
     display: none;
 }
-#msp{
- display: none;
-}
-#tbp{
-    display: none;
-}
-#gp{
-    display: none;
-}
 #footerrow{
     position: relative;
     top: 50px;
@@ -112,6 +128,17 @@ body{
     color: white;
     width:100%;
     margin-top: 50px;
+}
+.infoCard{
+  background-color: #ecf0f1;
+  border-radius: 10px;
+  padding: 1px;
+  text-align: center;
+  padding-top: 8px;
+}
+#eventInfoCard{
+  position: relative;
+  width: 300px;
 }
 
 ::-webkit-input-placeholder { /* Safari, Chrome and Opera */
@@ -137,7 +164,19 @@ body{
   left: 0;
   width:100%;
 }
-
+.parallax {
+    min-height: 400px;
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#missionImg{
+  position: relative;
+  height: 300px;
+  background-image: url("http://res.cloudinary.com/dcbmrov8f/image/upload/v1480302212/banner_mq7oa4.jpg");
+}
 /*footer*/
 #joinuslink{
     text-decoration: none;
