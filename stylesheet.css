@@ -1,5 +1,5 @@
 *{
- font-family: Verdana;
+ font-family: 'Source Sans Pro', sans-serif;;
 }
 body{
     background-color: #EDEDED;
@@ -14,7 +14,10 @@ a{
   cursor: pointer;
 }
 a:hover {
-    text-decoration: none;
+  text-decoration: none;
+}
+a:focus{
+  text-decoration: none;
 }
 .col-sm-12{
 		color: black;
@@ -23,14 +26,13 @@ a:hover {
 		padding: 20px 0;
 	}
 .title{
-    font-family: Driod Sans;
     font-size: 50px;
     width: 100%;
     text-align: center;
     display: none;
     position: absolute;
     z-index: 1;
-    color: white;
+    color: black;
     height: 0px;
 }
 #menuItems{
@@ -38,13 +40,19 @@ a:hover {
   top: 370px;
   width: 100%;
   z-index: 1;
+  background-color: black;
+  height: 60px;
 }
 .homepagemenubuttons{
     text-align: center;
     color: black;
     cursor: pointer;
-    padding-top: 20px;
+    padding-top: 15px;
     color: white;
+    font-size: 20px;
+}
+.homepagemenubuttons:hover{
+  color: dodgerblue;
 }
 #execbtn{
     display: none;
@@ -61,11 +69,10 @@ a:hover {
     width: 1px;
     borer: none;
     background-color: #0084B0;
-    height: 1px;
+    height: 0px;
 }
 #titlenum{
-    font-size: 43px;
-
+    font-size: 50px;
 }
 #infoboxes{
     position: relative;
@@ -73,7 +80,7 @@ a:hover {
 }
 .footerdiv{
     background-color: black;
-    height: 200px;
+    min-height: 150px;
 }
 #aboutSec{
     text-align: center;
@@ -130,17 +137,23 @@ a:hover {
     margin-top: 50px;
 }
 .infoCard{
-  background-color: #ecf0f1;
+  background-color: #34495E;
   border-radius: 10px;
   padding: 1px;
   text-align: center;
   padding-top: 8px;
+  position: relative;
 }
 #eventInfoCard{
   position: relative;
   width: 300px;
+  margin: 0px auto;
+  top: -50px;
+  font-size: 18px;
 }
-
+#eventInfoCardp:hover{
+  color: dodgerblue;
+}
 ::-webkit-input-placeholder { /* Safari, Chrome and Opera */
   color: #EBEBEB;
 }
@@ -183,14 +196,24 @@ a:hover {
     font-size: 20px;
     color: white;
     font-family: Century Gothic, sans-serif;
-    border: 1px solid white;
     padding: 2px;
     position: relative;
     top: -10px;
 }
 #joinuslink:hover{
     color: dodgerblue;
-    border: 1px solid dodgerblue;
+}
+#emailuslink{
+  text-decoration: none;
+  font-size: 20px;
+  color: white;
+  font-family: Century Gothic, sans-serif;
+  padding: 2px;
+  position: relative;
+  top: -10px;
+}
+#emailuslink:hover{
+    color: dodgerblue;
 }
 .socialmedialink{
     color: white;
@@ -203,15 +226,30 @@ a:hover {
     color: dodgerblue;
 }
 #twitter-icon{
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-family: Century Gothic, sans-serif;
+    padding: 2px;
     position: relative;
     top: -10px;
+}
+#twitter-icon:hover{
+    color: dodgerblue;
 }
 #facebook-icon{
     position: relative;
     left: -14px;
     top: -10px;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+    font-family: Century Gothic, sans-serif;
+    padding: 2px;
 }
-
+#facebook-icon:hover{
+    color: dodgerblue;
+}
 /*exec team*/
 .profileName{
   position: relative;
@@ -227,6 +265,8 @@ a:hover {
     height: 1px;
     width: 1px;
     background-color: black;
+    position: relative;
+    top: 55px;
 }
 #eventDescP{
   /*text-align: center;*/

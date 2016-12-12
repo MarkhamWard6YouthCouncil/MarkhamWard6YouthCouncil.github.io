@@ -11,22 +11,19 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 
   <!--font css-->
-  <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Droid+Sans" />
   <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
   <!--bootstrap-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
 
+  <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="stylesheet.css"/>
 </head>
 <script>
 $(document).ready(function(){
   var mobile;
   //fade in title
-  $(".title").fadeIn(1500,function(){
-
-  });
-
+  $(".title").fadeIn(1500);
   $("#titlenum").delay(300).fadeOut(200,function(){
     $("#titlenum").html("2");
     $("#titlenum").show();
@@ -66,6 +63,9 @@ $(document).ready(function(){
     $('#jqWidth').html(width);      // Display the width
     if(width < 760){
       mobile = true;
+      $("#menuItems").css("height","152px");
+      $("#aboutSec").css("top","50px");
+      $("#aboutSec").css("height","370px");
     }else{
       mobile = false;
     }
@@ -151,8 +151,8 @@ $(document).ready(function(){
 
 </script>
 <body>
-  <h1 class="title">Markham Ward <span id="titlenum">1</span> Youth Council</h1>
-  <div class="row-fluid" style="height: 222px;" id="menuItems">
+  <h1 class="title" style="color: white;">Markham Ward <span id="titlenum">1</span> Youth Council</h1>
+  <div class="row-fluid" id="menuItems">
     <div class="col-sm-2 col-sm-offset-3">
       <div id="execbtn" class="homepagemenubuttons">Our Executive Team</div>
     </div>
@@ -164,9 +164,9 @@ $(document).ready(function(){
     </div>
   </div>
   <section class="parallax" id="missionImg">
-    <div class="row-fluid">
-      <div class="infoCard" id="eventInfoCard" style="margin: 0px auto;">
-        <a href="https://www.facebook.com/events/338944126463331/" target="_blank"><p>Come to our Holiday Food Drive! <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></p></a>
+    <div class="row-fluid" style="top: -30px; position: relative;">
+      <div class="infoCard" id="eventInfoCard">
+        <a href="https://www.facebook.com/events/338944126463331/" target="_blank" style="color: white;"><p id="eventInfoCardp">Come to our Holiday Food Drive! <i class="fa fa-angle-right fa-lg" aria-hidden="true"></i></p></a>
       </div>
     </div>
   </section>
@@ -177,20 +177,20 @@ $(document).ready(function(){
       </p>
     </div>
   </div>
-    <div class="row-fluid">
-      <div class="col-sm-4 missionStatements" style="background-color: #7f8c8d">
-        <p>Our mission is to empower youth in our community and provide opportunities for them to be involved in the City of Markham.</p>
-      </div>
-      <div class="col-sm-4 missionStatements" style="background-color: #34495e">
-        <p>Upon becoming a member of our council, there are numerous chances to develop essential skills needed in other activities or jobs through the planning and participation of community events. Volunteer hours are also rewarded to those who take the initiative to help on the occasion of an event.</p>
-      </div>
-      <div class="col-sm-4 missionStatements" style="background-color: #7f8c8d">
-        <ul>
-          <li><i>Community outreach</i> – Bringing the community together and helping the less fortunate</li>
-          <li><i>Youth Advisory</i> – Amplifying the voices of the youth with a strong message</li>
-        </ul>
-      </div>
+  <div class="row-fluid">
+    <div class="col-sm-4 missionStatements" style="background-color: #7f8c8d">
+      <p>Our mission is to empower youth in our community and provide opportunities for them to be involved in the City of Markham.</p>
     </div>
+    <div class="col-sm-4 missionStatements" style="background-color: #34495e">
+      <p>Upon becoming a member of our council, there are numerous chances to develop essential skills needed in other activities or jobs through the planning and participation of community events. Volunteer hours are also rewarded to those who take the initiative to help on the occasion of an event.</p>
+    </div>
+    <div class="col-sm-4 missionStatements" style="background-color: #7f8c8d">
+      <ul>
+        <li><i>Community outreach</i> – Bringing the community together and helping the less fortunate</li>
+        <li><i>Youth Advisory</i> – Amplifying the voices of the youth with a strong message</li>
+      </ul>
+    </div>
+  </div>
   <script src="footer.js"></script>
 </body>
 </html>
