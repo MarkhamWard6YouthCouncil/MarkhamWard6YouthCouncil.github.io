@@ -24,21 +24,21 @@ $(document).ready(function(){
   var mobile;
   //fade in title
   $(".title").fadeIn(1500);
-  $("#titlenum").delay(300).fadeOut(200,function(){
-    $("#titlenum").html("2");
-    $("#titlenum").show();
-    $("#titlenum").fadeOut(200,function(){
-      $("#titlenum").html("3");
-      $("#titlenum").show();
-      $("#titlenum").fadeOut(200,function(){
-        $("#titlenum").html("4");
-        $("#titlenum").show();
-        $("#titlenum").fadeOut(200,function(){
-          $("#titlenum").html("5");
-          $("#titlenum").show();
-          $("#titlenum").fadeOut(300,function(){
-            $("#titlenum").html("6");
-            $("#titlenum").fadeIn(1000);
+  $("#titleNum").delay(300).fadeOut(200,function(){
+    $("#titleNum").html("2");
+    $("#titleNum").show();
+    $("#titleNum").fadeOut(200,function(){
+      $("#titleNum").html("3");
+      $("#titleNum").show();
+      $("#titleNum").fadeOut(200,function(){
+        $("#titleNum").html("4");
+        $("#titleNum").show();
+        $("#titleNum").fadeOut(200,function(){
+          $("#titleNum").html("5");
+          $("#titleNum").show();
+          $("#titleNum").fadeOut(300,function(){
+            $("#titleNum").html("6");
+            $("#titleNum").fadeIn(1000);
           });
         });
       });
@@ -53,7 +53,6 @@ $(document).ready(function(){
   $("#aboutustitle").fadeIn(1000);
   $("#aboutusp").fadeIn(1500);
   $("#aboutusp").animate({top: "-40"},{duration: 1500, queue: false});
-  $(".abouth").fadeIn(600);
 
 
   function jqUpdateSize(){
@@ -76,12 +75,12 @@ $(document).ready(function(){
   $("#execbtn").hover(
     function() {
       if(mobile == false){
-        $( this ).html("Our Executive Team<hr class='menubtnline'>");
+        $( this ).html("Our Executive Team<hr class='menuBtnLine'>");
         var hrwidthtimer = window.setInterval(function () {
-          var hrwidth = $(".menubtnline").width();
+          var hrwidth = $(".menuBtnLine").width();
 
           if(hrwidth< 50){
-            $('.menubtnline').css("width",hrwidth+1);
+            $('.menuBtnLine').css("width",hrwidth+1);
 
           }else{
             window.clearTimeout(hrwidthtimer);
@@ -91,19 +90,19 @@ $(document).ready(function(){
       }
     }, function() {
       $( this ).find( "hr:last" ).fadeOut(200,function(){
-        $('.menubtnline').remove();
+        $('.menuBtnLine').remove();
       });
     }
   );
   $("#pasteventsbtn").hover(
     function() {
       if(mobile == false){
-        $( this ).html("Past Events<hr class='menubtnline'>");
+        $( this ).html("Past Events<hr class='menuBtnLine'>");
         var hronewidthtimer = window.setInterval(function () {
-          var hrwidth = $(".menubtnline").width();
+          var hrwidth = $(".menuBtnLine").width();
 
           if(hrwidth< 50){
-            $('.menubtnline').css("width",hrwidth+1);
+            $('.menuBtnLine').css("width",hrwidth+1);
           }else{
             window.clearTimeout(hronewidthtimer);
           }
@@ -112,19 +111,19 @@ $(document).ready(function(){
 
     }, function() {
       $( this ).find( "hr:last" ).fadeOut(200,function(){
-        $('.menubtnline').remove();
+        $('.menuBtnLine').remove();
       });
     }
   );
   $("#contactusbtn").hover(
     function() {
       if(mobile == false){
-        $( this ).html("Contact Us<hr class='menubtnline'>");
+        $( this ).html("Contact Us<hr class='menuBtnLine'>");
         var hrtwowidthtimer = window.setInterval(function () {
-          var hrwidth = $(".menubtnline").width();
+          var hrwidth = $(".menuBtnLine").width();
 
           if(hrwidth< 50){
-            $('.menubtnline').css("width",hrwidth+1);
+            $('.menuBtnLine').css("width",hrwidth+1);
           }else{
             window.clearTimeout(hrtwowidthtimer);
           }
@@ -132,7 +131,7 @@ $(document).ready(function(){
       }
     }, function() {
       $( this ).find( "hr:last" ).fadeOut(200,function(){
-        $('.menubtnline').remove();
+        $('.menuBtnLine').remove();
       });
     }
   );
@@ -151,16 +150,16 @@ $(document).ready(function(){
 
 </script>
 <body>
-  <h1 class="title" style="color: white;">Markham Ward <span id="titlenum">1</span> Youth Council</h1>
+  <h1 class="title" style="color: white;">Markham Ward <span id="titleNum">1</span> Youth Council</h1>
   <div class="row-fluid" id="menuItems">
     <div class="col-sm-2 col-sm-offset-3">
-      <div id="execbtn" class="homepagemenubuttons">Our Executive Team</div>
+      <div id="execBtn" class="homePageMenuButtons">Our Executive Team</div>
     </div>
     <div class="col-sm-2">
-      <div id="pasteventsbtn" class="homepagemenubuttons">Past Events</div>
+      <div id="pastEventsBtn" class="homePageMenuButtons">Past Events</div>
     </div>
     <div class="col-sm-2">
-      <div id="contactusbtn" class="homepagemenubuttons">Contact Us</div>
+      <div id="contactUsBtn" class="homePageMenuButtons">Contact Us</div>
     </div>
   </div>
   <section class="parallax" id="missionImg">

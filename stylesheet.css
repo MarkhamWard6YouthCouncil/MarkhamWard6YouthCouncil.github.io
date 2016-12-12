@@ -43,7 +43,7 @@ a:focus{
   background-color: black;
   height: 60px;
 }
-.homepagemenubuttons{
+.homePageMenuButtons{
     text-align: center;
     color: black;
     cursor: pointer;
@@ -51,19 +51,19 @@ a:focus{
     color: white;
     font-size: 20px;
 }
-.homepagemenubuttons:hover{
+.homePageMenuButtons:hover{
   color: dodgerblue;
 }
-#execbtn{
+#execBtn{
     display: none;
 }
-#pasteventsbtn{
+#pastEventsBtn{
     display: none;
 }
-#contactusbtn{
+#contactUsBtn{
     display: none;
 }
-.menubtnline{
+.menuBtnLine{
     position: relative;
     top: -17px;
     width: 1px;
@@ -71,14 +71,10 @@ a:focus{
     background-color: #0084B0;
     height: 0px;
 }
-#titlenum{
+#titleNum{
     font-size: 50px;
 }
-#infoboxes{
-    position: relative;
-    text-align: center;
-}
-.footerdiv{
+.footerDiv{
     background-color: black;
     min-height: 150px;
 }
@@ -118,23 +114,9 @@ a:focus{
 	border-bottom: 10px solid #0091C2;
     display: none;
 }
-.abouth{
-    cursor: pointer;
-    display: none;
-}
-#footerrow{
+#footerRow{
     position: relative;
     top: 50px;
-}
-#newssub{
-    padding: 3px;
-    outline: none;
-    border: 1px solid black;
-    border-bottom: 1px solid white;
-    background-color: black;
-    color: white;
-    width:100%;
-    margin-top: 50px;
 }
 .infoCard{
   background-color: #34495E;
@@ -191,7 +173,7 @@ a:focus{
   background-image: url("http://res.cloudinary.com/dcbmrov8f/image/upload/v1480302212/banner_mq7oa4.jpg");
 }
 /*footer*/
-#joinuslink{
+#joinUsLink{
     text-decoration: none;
     font-size: 20px;
     color: white;
@@ -200,10 +182,10 @@ a:focus{
     position: relative;
     top: -10px;
 }
-#joinuslink:hover{
+#joinUsLink:hover{
     color: dodgerblue;
 }
-#emailuslink{
+#emailUsLink{
   text-decoration: none;
   font-size: 20px;
   color: white;
@@ -212,20 +194,20 @@ a:focus{
   position: relative;
   top: -10px;
 }
-#emailuslink:hover{
+#emailUsLink:hover{
     color: dodgerblue;
 }
-.socialmedialink{
+.socialMediaLink{
     color: white;
     font-size: 15px;
     text-decoration-color: white;
     position: relative;
     margin-top: 10px;
 }
-.socialmedialink:hover{
+.socialMediaLink:hover{
     color: dodgerblue;
 }
-#twitter-icon{
+#twitterIcon{
     text-decoration: none;
     font-size: 18px;
     color: white;
@@ -234,10 +216,10 @@ a:focus{
     position: relative;
     top: -10px;
 }
-#twitter-icon:hover{
+#twitterIcon:hover{
     color: dodgerblue;
 }
-#facebook-icon{
+#facebookIcon{
     position: relative;
     left: -14px;
     top: -10px;
@@ -247,7 +229,7 @@ a:focus{
     font-family: Century Gothic, sans-serif;
     padding: 2px;
 }
-#facebook-icon:hover{
+#facebookIcon:hover{
     color: dodgerblue;
 }
 /*exec team*/
@@ -258,10 +240,7 @@ a:focus{
 }
 
 /*pastevents page*/
-#timeevents{
-    font-family: Verdana;
-}
-#titlehr{
+#titleHr{
     height: 1px;
     width: 1px;
     background-color: black;
@@ -296,12 +275,12 @@ ul.nav a:hover { color: black !important; }
 
 .navbar-collapse{border: none;}
 
-#navbarcoltitle:hover{
+#navbarColTitle:hover{
     background-color: transparent;
 }
-#navbarcolmenu{
+#navbarColMenu{
     background-color: transparent;
 }
-#navbarcolmenu:hover{
+#navbarColMenu:hover{
     background-color: transparent;
 }
