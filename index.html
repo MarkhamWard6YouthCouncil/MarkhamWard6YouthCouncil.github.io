@@ -129,16 +129,9 @@ $(document).ready(function(){
       });
     }
   );
-  //menu button item links
-  $("#pasteventsbtn").on("click",function(){
-    location.href="past_events/past-events.html";
-  })
-  $("#execbtn").on("click",function(){
-    location.href="our_executive_team/our-executive-team.html";
-  });
   //about highlight when hover
   $("#missionImg").css("height", $(window).height());
-  $("#menuItems").css("top",$(window).height()-100);
+  $("#menuItems").css("top",$(window).height()-60);
   $("#eventInfoCard").css("top",$(window).height()-150);
 });
 
@@ -147,13 +140,13 @@ $(document).ready(function(){
   <h1 class="title" style="color: white;">Markham Ward <span id="titleNum">1</span> Youth Council</h1>
   <div class="row-fluid" id="menuItems">
     <div class="col-sm-2 col-sm-offset-3">
-      <div id="execBtn" class="homePageMenuButtons">Our Executive Team</div>
+      <a href="our_executive_team/our-executive-team.html"><div id="execBtn" class="homePageMenuButtons">Our Executive Team</div></a>
     </div>
     <div class="col-sm-2">
-      <div id="pastEventsBtn" class="homePageMenuButtons">Past Events</div>
+      <a href="past_events/past-events.html"><div id="pastEventsBtn" class="homePageMenuButtons">Past Events</div></a>
     </div>
     <div class="col-sm-2">
-      <div id="contactUsBtn" class="homePageMenuButtons">Contact Us</div>
+        <div id="contactUsBtn" class="homePageMenuButtons"><a href="mailto:markhamward6youthcouncil@gmail.com" style="color: white;">Contact Us</a></div>
     </div>
   </div>
   <section class="parallax" id="missionImg">
@@ -169,15 +162,16 @@ $(document).ready(function(){
         Our organization consists of youth living or attending a high school in the Markham Ward 6 area, hence the name. Our focus is on empowering the youth who will take on leadership roles to manage the council, therefore the decisions coming from the council effectively reflect the voices of the youth.
       </p>
     </div>
+      <br>
   </div>
   <div class="row-fluid">
-    <div class="col-sm-4 missionStatements" style="background-color: #7f8c8d">
+    <div class="col-sm-4 missionStatements">
       <p>Our mission is to empower youth in our community and provide opportunities for them to be involved in the City of Markham.</p>
     </div>
-    <div class="col-sm-4 missionStatements" style="background-color: #34495e">
+    <div class="col-sm-4 missionStatements">
       <p>Upon becoming a member of our council, there are numerous chances to develop essential skills needed in other activities or jobs through the planning and participation of community events. Volunteer hours are also rewarded to those who take the initiative to help on the occasion of an event.</p>
     </div>
-    <div class="col-sm-4 missionStatements" style="background-color: #7f8c8d">
+    <div class="col-sm-4 missionStatements">
       <ul>
         <li><i>Community outreach</i> – Bringing the community together and helping the less fortunate</li>
         <li><i>Youth Advisory</i> – Amplifying the voices of the youth with a strong message</li>
