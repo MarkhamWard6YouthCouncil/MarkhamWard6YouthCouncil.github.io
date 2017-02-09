@@ -9,6 +9,9 @@ body{
     padding: 30px;
     max-width: 1000px;
 }
+.fadeIn(){
+  opacity: 0.01;
+}
 a{
   text-decoration: none;
   cursor: pointer;
@@ -88,9 +91,9 @@ a:focus{
 #aboutSec{
     text-align: center;
     height: 200px;
-    background-color: #c0392b;
+    background-color: #fffbdd;
     position: relative;
-    color: white;
+    color: #161616;
     font-size: 18px;
 }
 .missionStatements{
@@ -165,7 +168,7 @@ background-color: #27ae60;
 }
 .eventPhoto{
     width:100%;
-    
+
 }
 .parallax {
     min-height: 400px;
